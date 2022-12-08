@@ -1,10 +1,14 @@
 // Create an object to store the medical issues and symptoms
-var medicalInfo = {};
+var medicalInfo = {
+  "issue": "symptom"
+};
+var fs = require("fs");
 
 // Create inputs for the symptom and medical issue name
 var symptomInput = document.createElement("input");
 symptomInput.placeholder = "Symptom";
 document.body.appendChild(symptomInput);
+
 
 var medicalIssueInput = document.createElement("input");
 medicalIssueInput.placeholder = "Medical Issue";
@@ -40,6 +44,13 @@ addButton.addEventListener("click", function() {
   }
 
   // Clear the input values
+
+  fs.writeFile("data.json", JSON.stringify(medicalInfo), function(err) {
+    if (err) {
+      return console.log(err);
+    }
+    console.log("The file was saved!");
+  });
   symptomInput.value = "";
   medicalIssueInput.value = "";
 });
