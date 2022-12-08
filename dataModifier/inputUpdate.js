@@ -1,8 +1,8 @@
 // Create an object to store the medical issues and symptoms
 var medicalInfo = {
-  "issue": "symptom"
+  "": ""
 };
-var fs = require("fs");
+// var fs = require("fs");
 
 // Create inputs for the symptom and medical issue name
 var symptomInput = document.createElement("input");
