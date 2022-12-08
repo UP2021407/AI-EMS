@@ -8,11 +8,11 @@
                 const button = document.getElementById("submit");
 
                 const medicalIssues = {
-                    headache: {
+                    Headache: {
                         symptoms: ["headache", "dizziness"],
                         urgency: 1
                     },
-                    flu: {
+                    Flu: {
                         symptoms: ["cough", "sore throat"],
                         urgency: 2
                     },
@@ -83,9 +83,9 @@
     </head>
     <body>
         <h1>Diagnosis AI</h1>
-        <textarea id="input" rows="5"></textarea>
+        <textarea id="input" rows="5" placeholder="Describe symptoms here."></textarea>
         <button id="submit">Submit</button>
-        <textarea id="console" rows="5" readonly></textarea>
+        <textarea id="console" rows="5" readonly placeholder="Possible issues will appear here."></textarea>
         <button id="clear">Clear console</button>
     </body>
 </html>
