@@ -40,22 +40,24 @@
                     console.value = output;
                 });
 
-                const clearButton = document.getElementById("clear");
+                
                 });
+                
+                const clearButton = document.getElementById("clear");
+                    document.getElementById("input").value = "";
+                    clearButton.addEventListener("click", function(){
+                    document.getElementById("console").value = "";
+                    });
+
 
                 const confirmButton = document.getElementById("confirm");
-                confirmButton.addEventListener("click", function() {
-                    input.value = "";
-                    issuesNameInput.value = "";
-                    symInput.value = "";
-                    const userSymptom = symInput.value.toLowerCase().split(",");
+                    confirmButton.addEventListener("click", function() {
+                    const userSymptom = symInput.value.toLowerCase().split(" ");
                     const userName = issuesNameInput.value;
 
-                    medicalIssues[userName].symptoms.concat(userSymptom);
-                clearButton.addEventListener("click", function() {
-                    console.value = "";
+                    medicalIssues[userName].symptoms.push(userSymptom);
                 });
-            });
+            
             
         </script>
         <style>

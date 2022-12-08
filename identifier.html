@@ -8,15 +8,15 @@
                 const button = document.getElementById("submit");
 
                 const medicalIssues = {
-                    Headache: {
+                    headache: {
                         symptoms: ["headache", "dizziness"],
                         urgency: 1
                     },
-                    Flu: {
+                    flu: {
                         symptoms: ["cough", "sore throat"],
                         urgency: 2
                     },
-                    BrokenBone: {
+                    brokenbone: {
                         symptoms: ["pain", "swelling"],
                         urgency: 3
                     }
@@ -40,13 +40,19 @@
                     console.value = output;
                 });
 
-                const clearButton = document.getElementById("clear");
+                
                 });
+                
+                const clearButton = document.getElementById("clear");
+                    confirmButton.addEventListener("click", function(){
+                    document.getElementById("console").value = "";
+                    });
+
 
                 const confirmButton = document.getElementById("confirm");
                     confirmButton.addEventListener("click", function() {
                     const userSymptom = symInput.value.toLowerCase().split(" ");
-                    const userName = issuesNameInput.value.toLowerCase();
+                    const userName = issuesNameInput.value;
 
                     medicalIssues[userName].symptoms.concat(userSymptom);
                     clearButton.addEventListener("click", function() {
