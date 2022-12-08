@@ -44,12 +44,12 @@
                 });
 
                 const confirmButton = document.getElementById("confirm");
-                confirmButton.addEventListener("click", function() {
-                    const userSymptom = symInput.value.toLowerCase().split(",");
-                    const userName = issuesNameInput.value;
+                    confirmButton.addEventListener("click", function() {
+                    const userSymptom = symInput.value.toLowerCase().split(" ");
+                    const userName = issuesNameInput.value.toLowerCase();
 
                     medicalIssues[userName].symptoms.concat(userSymptom);
-                clearButton.addEventListener("click", function() {
+                    clearButton.addEventListener("click", function() {
                     console.value = "";
                 });
             });

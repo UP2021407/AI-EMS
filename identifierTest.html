@@ -45,6 +45,9 @@
 
                 const confirmButton = document.getElementById("confirm");
                 confirmButton.addEventListener("click", function() {
+                    input.value = "";
+                    issuesNameInput.value = "";
+                    symInput.value = "";
                     const userSymptom = symInput.value.toLowerCase().split(",");
                     const userName = issuesNameInput.value;
 
