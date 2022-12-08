@@ -1,4 +1,4 @@
-# H1 JavaScript AI Machine Learning Model
+# JavaScript AI Machine Learning Model
 
 This code creates a machine learning model using TensorFlow.js, trains it on a dataset of past emergency calls, and uses it to make predictions on the likelihood of a severe situation for incoming calls. It also uses natural language processing to extract relevant information from the caller's description, and prioritises calls for immediate dispatch if the prediction indicates a high likelihood of a severe situation. Of course, this is just one possible approach to creating an application like this, and the exact details of the code will depend on the specific requirements of the application.
 
@@ -47,7 +47,7 @@ This line trains the model for 100 epochs using the provided training data, whic
 Overall, the TensorFlow.js library is used in the code to create, compile, and train a machine learning model that can be used to make predictions on the likelihood of a severe emergency situation. The library provides a convenient and powerful set of tools for building and running machine learning models in JavaScript, and is an essential part of this application.
 
 
-## H2 TensorFlow.js Library
+## TensorFlow.js Library
 
 TensorFlow.js is a good choice for this application because it is a powerful and widely-used library for building and running machine learning models in JavaScript. It is based on TensorFlow, a popular and widely-used machine learning library developed by Google, and provides a set of APIs and tools that are specifically designed for use in JavaScript environments.
 
