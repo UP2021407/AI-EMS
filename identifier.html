@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Diagnosis AI</title>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const input = document.getElementById("input");
+                const console = document.getElementById("console");
+                const button = document.getElementById("submit");
+
+                const medicalIssues = {
+                    headache: {
+                        symptoms: ["headache", "dizziness"],
+                        urgency: 1
+                    },
+                    flu: {
+                        symptoms: ["cough", "sore throat"],
+                        urgency: 2
+                    },
+                    BrokenBone: {
+                        symptoms: ["pain", "swelling"],
+                        urgency: 3
+                    }
+                };
+
+                button.addEventListener("click", function() {
+                    const userInput = input.value.toLowerCase().split(" ");
+                    let output = "";
+                    for (let i = 0; i < userInput.length; i++) {
+                        for (let issue in medicalIssues) {
+                            for (let j = 0; j < medicalIssues[issue].symptoms.length; j++) {
+                                if (userInput[i] === medicalIssues[issue].symptoms[j]) {
+                                    output = output + issue + " - Urgency: " + medicalIssues[issue].urgency + "\n";
+                                }
+                            }
+                        }
+                    }
+                    if (output === "") {
+                        output = "No medical issue found";
+                    }
+                    console.value = output;
+                });
+
+                const clearButton = document.getElementById("clear");
+                clearButton.addEventListener("click", function() {
+                    console.value = "";
+                });
+            });
+            
+        </script>
+        <style>
+
+            h1 {
+                background-color: #0A0F8B;
+                padding: 1%;
+                text-align: center;
+                color: white;
+            }
+
+            body {
+			    background: gray;
+                text-align: center;
+		    }
+
+            #input {
+                width: 500px;
+                margin: 0 auto;
+            }
+
+            #console {
+                width: 500px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            #submit {
+                margin: 0 auto;
+            }
+
+            #clear {
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Diagnosis AI</h1>
+        <textarea id="input" rows="5"></textarea>
+        <button id="submit">Submit</button>
+        <textarea id="console" rows="5" readonly></textarea>
+        <button id="clear">Clear console</button>
+    </body>
+</html>
