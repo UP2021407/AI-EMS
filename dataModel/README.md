@@ -60,7 +60,7 @@ Overall, the TensorFlow.js library is used in the code to create, compile, and t
 
 ## Natural Library
 
-The natural library is a JavaScript library for performing natural language processing tasks. It provides functions for things like tokenization, stemming, and part-of-speech tagging, which can be useful for tasks like sentiment analysis, topic modeling, and other common NLP tasks. This library is built on top of the NLP.js library and is designed to be simple and easy to use.
+The natural library is a JavaScript library for performing NLP (Natural Language Processing) tasks. It provides functions for things like tokenization, stemming, and part-of-speech tagging, which can be useful for tasks like sentiment analysis, topic modeling, and other common NLP tasks. This library is built on top of the NLP.js library and is designed to be simple and easy to use.
 
 I am using it in this programme because:
 
@@ -94,3 +94,19 @@ In neural networks, the rectified linear unit (ReLU) activation function is a ty
 **Stochastic Gradient Descent**
 
 Stochastic gradient descent (SGD) is an optimization algorithm used to train deep learning models. It is a variant of gradient descent, which is an iterative method for minimizing a function by following the negative of the gradient of the function. In contrast to gradient descent, which updates the model parameters using the average gradient of the entire dataset, SGD updates the model parameters using the gradient of a single training example or a small batch of examples. This makes SGD much faster and more efficient than gradient descent, but it can also be less stable and may require more careful tuning of the learning rate and other hyperparameters.
+
+**Squared Error Loss Function**
+
+A squared error loss function is a common type of loss function that is used in regression tasks. It is called a "squared error" loss function because it calculates the difference between the predicted value and the true value, and then squares the result. The squaring of the difference is done to ensure that the result is always positive, regardless of whether the predicted value is greater than or less than the true value. The squared error loss is then calculated as the average of the squared differences for all of the data points in the dataset.
+
+The squared error loss function is defined as:
+
+L(y, ŷ) = 1/n * Σi=1^n (y - ŷ)^2
+
+Where y is the true value, ŷ is the predicted value, and n is the number of data points in the dataset.
+
+In general, the goal when training a machine learning model is to minimize the squared error loss, so that the predicted values are as close as possible to the true values. This is typically done by adjusting the model's parameters during training to reduce the overall squared error loss on the training data.
+
+**Architecture of the Machine Learning Model**
+
+The architecture of a machine learning model refers to the overall structure and design of the model, including the number of layers, the types of layers, and the connections between the layers. The architecture of a model can have a significant impact on its performance and ability to learn from data, so it is an important aspect to consider when designing a machine learning model.
