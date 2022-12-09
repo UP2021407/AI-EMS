@@ -2,11 +2,15 @@
 
 This code creates a machine learning model using TensorFlow.js, trains it on a dataset of past emergency calls, and uses it to make predictions on the likelihood of a severe situation for incoming calls. It also uses natural language processing to extract relevant information from the caller's description, and prioritises calls for immediate dispatch if the prediction indicates a high likelihood of a severe situation. Of course, this is just one possible approach to creating an application like this, and the exact details of the code will depend on the specific requirements of the application.
 
+## Libraries
+
+I am using the following libraries in this programme:
+
 [Natural Overview](https://www.npmjs.com/package/natural)
 
-The natural library is a JavaScript library for performing natural language processing tasks. It provides functions for things like tokenization, stemming, and part-of-speech tagging, which can be useful for tasks like sentiment analysis, topic modeling, and other common NLP tasks. This library is built on top of the NLP.js library and is designed to be simple and easy to use.
-
 [TensorFlow Overview](https://www.tensorflow.org/overview)
+
+## Code overview
 
 The TensorFlow.js library is used in the code to create and train a machine learning model that is capable of making predictions on the likelihood of a severe emergency situation based on information provided by the caller. The library is imported at the beginning of the code using the following line:
 
@@ -54,6 +58,9 @@ This line trains the model for 100 epochs using the provided training data, whic
 
 Overall, the TensorFlow.js library is used in the code to create, compile, and train a machine learning model that can be used to make predictions on the likelihood of a severe emergency situation. The library provides a convenient and powerful set of tools for building and running machine learning models in JavaScript, and is an essential part of this application.
 
+## Natural Library
+
+The natural library is a JavaScript library for performing natural language processing tasks. It provides functions for things like tokenization, stemming, and part-of-speech tagging, which can be useful for tasks like sentiment analysis, topic modeling, and other common NLP tasks. This library is built on top of the NLP.js library and is designed to be simple and easy to use.
 
 ## TensorFlow.js Library
 
