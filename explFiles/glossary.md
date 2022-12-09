@@ -1,5 +1,7 @@
 # Glossary
 
+Set of explanations for related terms and words for when I forget them in the future when reading through this code.
+
 **Epoch**
 
 In machine learning, an epoch is one iteration over the entire training dataset. When training a model, the data is usually divided into smaller batches that are processed independently. An epoch is a measure of the number of times each batch of data is used for training. For example, if you have a training dataset of 1000 examples and you use a batch size of 100, it would take 10 iterations to complete one epoch. After one epoch, the model would have seen all 1000 examples, but it would have only been trained on a subset of the data (i.e. 100 examples) at a time.
