@@ -11,6 +11,7 @@ model.add(tf.layers.dense({units: 1, activation: 'linear'}));
 model.compile({loss: 'meanSquaredError', optimizer: 'sgd'});
 
 // Train the model on a dataset of past emergency calls
+// Here we assume that we have access to a dataset called emergencyCallData and the respective outcome dataset called emergencyOutcomeData
 model.fit(emergencyCallData, emergencyOutcomeData, {epochs: 100});
 
 // Define a function to make predictions on new emergency calls
