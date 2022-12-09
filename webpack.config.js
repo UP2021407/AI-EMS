@@ -1,1 +1,7 @@
 // Not being used
+
+// A webpack.config file is a configuration file for the webpack module bundler. It specifies how files in a web application should be transformed and bundled into a single file (or multiple files) that can be loaded by a browser. The config file is written in JavaScript and uses a declarative approach, in which you define the different options and rules for bundling your application's files. This allows you to specify which files should be included in the bundle, what transformations should be applied to those files, and how the bundled files should be output. Webpack can then use this config file to generate the bundled files for your application.
+
+// What is the point of bundling files like this?
+
+// The main purpose of bundling files using webpack (or any other module bundler) is to reduce the number of HTTP requests that a browser has to make to load an application, which can improve the performance and speed of the application. By bundling all of the application's JavaScript files into a single file (or a few files), you can reduce the number of separate requests that the browser has to make to load all of the individual files. This can also make it easier to manage the application's dependencies, since all of the required files can be included in a single bundle. Additionally, bundling files can make it easier to apply transformations to the code, such as minification or transpilation, which can further improve the performance of the application.
