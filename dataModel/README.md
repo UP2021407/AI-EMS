@@ -110,3 +110,17 @@ In general, the goal when training a machine learning model is to minimize the s
 **Architecture of the Machine Learning Model**
 
 The architecture of a machine learning model refers to the overall structure and design of the model, including the number of layers, the types of layers, and the connections between the layers. The architecture of a model can have a significant impact on its performance and ability to learn from data, so it is an important aspect to consider when designing a machine learning model.
+
+**Tokenization**
+
+Tokenization is the process of breaking a stream of text up into words, phrases, symbols, or other meaningful elements called tokens. The list of tokens becomes input for further processing such as parsing or text mining. Tokenization is an essential part of many natural language processing (NLP) tasks, such as part-of-speech tagging, syntactic parsing, and text mining.
+
+Tokenization is an important preprocessing step in natural language processing because it allows the resulting tokens to be easily indexed and counted. This makes it possible to perform many common NLP tasks, such as identifying the most frequently occurring words in a document, or finding the relative frequency of different parts of speech.
+
+**Stemming**
+
+In natural language processing, stemming is the process of reducing inflected words to their word stem, base, or root form—typically a written word form. This is often used as a preprocessing step in text mining and natural language processing tasks in order to reduce the dimensionality of the input data and improve the accuracy of the algorithms that process it.
+
+Stemming is a way of normalizing text data by reducing words to their base form, regardless of the context in which they are used. This means that words with the same stem will be treated as the same word, even if they are spelled differently. For example, the words "running", "ran", and "runs" all have the same stem, "run".
+
+Stemming is often used in natural language processing tasks because it can help to improve the performance of machine learning algorithms. By reducing words to their base form, stemming can help to reduce the dimensionality of the data, which can improve the speed and accuracy of the algorithms that process it. Additionally, stemming can help to reduce the amount of noise in the data, which can also improve the performance of machine learning algorithms.
